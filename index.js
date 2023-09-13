@@ -7,7 +7,7 @@ const path = require('path');
 const methodOverride = require('method-override')
 
 const app = express();
-const port = 3005;
+const port = 3008;
 
 
 app.use(bodyParser.json());
@@ -67,7 +67,7 @@ function requireAuth(req, res, next) {
   }
 
 mongoose
-    .connect('mongodb+srv://richynaomi30:Required1234@cluster0.uewqabx.mongodb.net/redd', {
+    .connect('mongodb+srv://richynaomi30:Required1234@cluster0.uewqabx.mongodb.net/ezek', {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
